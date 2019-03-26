@@ -35,9 +35,12 @@ Mover.prototype.display = function() {
     //body
     fill(255, 243, 8);
     ellipse(this.position.x, this.position.y, 58, 16);
-    fill(248, 255, 41);
     //head
+    fill(248, 255, 41);
     ellipse(this.position.x-27, this.position.y, 20, 20);
+    //eye
+    fill(5, 5, 5);
+    ellipse(this.position.x-31, this.position.y-2, 5, 5);
     //beak
     fill(235, 228, 103);
     triangle(this.position.x-34, this.position.y+8, this.position.x-37, this.position.y-2, this.position.x-47, this.position.y+8);
@@ -82,5 +85,8 @@ draw = function() {
 };
 drawRange();
 };
+
+
+
 
 
