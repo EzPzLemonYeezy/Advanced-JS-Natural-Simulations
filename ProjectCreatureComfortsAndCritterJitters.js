@@ -30,16 +30,16 @@ Flower.prototype.calculateAttraction = function(m){
 // displaying the Flower
 Flower.prototype.display = function(){
     // pedals
-    fill(240, 3, 15);
+    fill(240, 209, 5);
     ellipse(this.position.x+11, this.position.y, 16, 16);
     ellipse(this.position.x-11, this.position.y, 16, 16);
     ellipse(this.position.x, this.position.y-11, 16, 16);
     ellipse(this.position.x, this.position.y+11, 16, 16);
     // center of flower
-    fill(255, 247, 0);
+    fill(250, 250, 250);
     ellipse(this.position.x, this.position.y, 10, 10);
     // flower stem
-    stroke(11, 122, 37);
+    stroke(31, 219, 75);
     strokeWeight(4);
     line(this.position.x, this.position.y+100, this.position.x, this.position.y+20);
 };
@@ -73,22 +73,22 @@ Bird.prototype.display = function() {
     stroke(0, 0, 0);
     strokeWeight(2);
     // inside wing
-    fill(230, 230, 161);
+    fill(161, 198, 230);
     triangle(this.position.x-10, this.position.y, this.position.x+19, this.position.y, this.position.x+-6, this.position.y+26);
     // body
-    fill(255, 243, 8);
+    fill(43, 223, 255);
     ellipse(this.position.x, this.position.y, 58, 16);
     // head
-    fill(248, 255, 41);
+    fill(43, 223, 255);
     ellipse(this.position.x-27, this.position.y, 20, 20);
     // eye
     fill(5, 5, 5);
     ellipse(this.position.x-31, this.position.y-2, 5, 5);
     // beak
-    fill(235, 228, 103);
+    fill(240, 240, 240);
     triangle(this.position.x-34, this.position.y+8, this.position.x-37, this.position.y-2, this.position.x-47, this.position.y+8);
     // outside wing
-    fill(230, 230, 161);
+    fill(161, 220, 230);
     triangle(this.position.x-10, this.position.y, this.position.x+19, this.position.y, this.position.x+33, this.position.y+21);
     
 };
